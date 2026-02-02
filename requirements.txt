@@ -1,0 +1,5 @@
+requests
+numpy
+matplotlib
+
+# Pip install -r requirememts.txt
