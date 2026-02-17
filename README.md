@@ -14,6 +14,7 @@ Ligning 1 svarer til antallet af byttedyr x til tiden t. Første led kx udtrukke
 Ligning 2 tilsvarende til antal rovdyr y til tiden t . Det første led bxy er udtryk for tilvæksten af rovdyr, idet rovdyrene spiser byttedyrene. Det sidste led -hy er udtryk for rovdyrenes øvrige vækst og død afhængig af andre forhold.
 
 ![image](assets/ideal_graph.png)
+I dette koordinatsystem er x-aksen tiden og y-aksen befolkningstallet. Den blå linje repræsenterer byttedyr, mens den røde repræsenterer rovdyr.
 
 ## Tilføjelser
 I min "Predator and Prey" simulation har jeg løst de krævende opgaver (som kan læses under), og jeg tilføjet følgende:
