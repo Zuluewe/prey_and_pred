@@ -18,7 +18,7 @@ def make_toroidal_classes(model):
     return ToroidalPrey, ToroidalPredator
 
 if __name__ == "__main__":
-    model = Model(width=10, height=6, seed=2)
+    model = Model(width=10, height=10, seed=2)
     ToroidalPrey, ToroidalPredator = make_toroidal_classes(model)
 
     prey_start = 25 # prey
@@ -29,12 +29,12 @@ if __name__ == "__main__":
     for _ in range(pred_start):
         model.add_agent(ToroidalPredator(model, uid=model.next_uid))
 
-    # Store historical data
+    # historical data to make graph
     time_steps = []
     prey_counts = []
     pred_counts = []
 
-    model_time = 150 # time
+    model_time = 200 # time
     for _ in range(model_time):
         prey_count = sum(isinstance(a, ToroidalPrey) for a in model.agent)
         pred_count = sum(isinstance(a, ToroidalPredator) for a in model.agent)
@@ -53,18 +53,22 @@ if __name__ == "__main__":
         x = np.array(time_steps[:frame])
         y_prey = np.array(prey_counts[:frame])
         y_pred = np.array(pred_counts[:frame])
-        
+
+        # update scatter plot data for predator
         data_pred = np.stack([x, y_pred]).T
         scat_pred.set_offsets(data_pred)
         
+        # update scatter plot data for prey
         data_prey = np.stack([x, y_prey]).T
         scat_prey.set_offsets(data_prey)
         
         return (scat_pred, scat_prey)
     
+    # Plotting the data
     scat_pred = ax.scatter([], [], c="r", s=5, label='Predator')
     scat_prey = ax.scatter([], [], c="b", s=5, label='Prey')
     
+    # Titels
     ax.set_title("Graph over predator and prey population over time")
     ax.set(xlim=[0, model_time], ylim=[0, prey_start + 25], xlabel='Time [t]', ylabel='Population')
     ax.legend()

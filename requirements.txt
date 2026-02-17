@@ -3,3 +3,4 @@ numpy
 matplotlib
 
 # Pip install -r requirememts.txt
+# Pip freeze > requirements.txt
