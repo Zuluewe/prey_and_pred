@@ -15,6 +15,8 @@ Equation 2 corresponds to the number of predators y at time t. The first term bx
 
 ![image](assets/ideal_graph.png)
 
+In this coordinate system the x-axes is time and the y-axes is the population number. The blue line represents prey while the red is predators.
+
 ## Additions
 In my “Predator and Prey” simulation, I have solved the required tasks (which can be read below), and I have added the following:
 
@@ -29,62 +31,61 @@ This variable is to insure that the wolved and sheep dont eat constantly so thei
 
 Solved in the file:  [prey.py]([https://example.com](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py))
 
-I define the interact funktionen for prey so they can increase their energi og reproduce.
+I defined the interact funktionen for prey so they can increase their energi og reproduce.
 
-## Taks
+## Tasks
 ### Task 1 
 Solved in the file: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py) and [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
-- Regler ✓
-    - ~~Prey/Predator skal flytte sig i et random 4-nabolag(op/ned/venstre/højre)~~
-    - ~~Prey/Predator mister energi hver tur self.energy -= 1~~
-    - ~~self.die() hvis energy <= 0~~
+- Rules ✓
+    - ~~Prey/Predator must move in a random 4-neighborhood (up/down/left/right)~~
+    - ~~Prey/Predator loses energy each turn self.energy -= 1~~
+    - ~~self.die() if energy <= 0~~
       
-- Implementér: ✓
+- Implements: ✓
     - ~~Prey.move()~~
     - ~~Predator.move()~~
 
 - Test ✓
-    - ~~print af antal prey/predator pr.step~~
+    - ~~print the amount of prey/predator pr.step~~
 
 ### task 2
 Solved in the file: [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
-- Regler: ✓
-    - ~~Predator skal kunne spise én prey hvis der står en prey på samme celler.~~
-    - ~~Når prey spises:~~
-        - ~~prey dør (prey.die())~~
-        - ~~predator får energi (fx +10)~~
-          
-- Implementér: ✓
+- Rules: ✓
+  - ~~Predator must be able to eat one prey if there is prey on the same cell.~~
+  - ~~When prey is eaten:~~
+        - ~~prey dies (prey.die())~~
+        - ~~predator gains energy (e.g. +10)~~
+- Implements: ✓
     - ~~Predator.interact()~~
-        - ~~finde prey på samme celle (`model.agent_at()`)~~
-        - ~~prey.die() hvis er blevet spist~~
+        - ~~find prey on the same cell (`model.agent_at()`)~~
+        - ~~prey.die() if eaten~~
 
 ### Task 3
 Solved in the file: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py) og [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
-- Regler ✓
-    - ~~Hvis prey/predator har høj energi, eller efter en reproduce_rate, laver den en ny baby.~~
-    - ~~Baby spawn'er ved samme position (eller nabo, hvis i vil)~~
-    - ~~Forælderen mister energi (fx halverer sin energi)~~
+- Rules ✓
+    - ~~If prey/predator has high energy, or after a reproduce_rate, it creates a new baby.~~
+    - ~~Baby spawns at the same position (or neighbor, if you want)~~
+    - ~~The parent loses energy (e.g., halves its energy)~~
       
-- Implementér ✓
+- Implements ✓
     - ~~Prey.reproduce()~~
     - ~~Predator.reproduce()~~
 
 ### Task 4
 Solved in the file: [test.py](https://github.com/Zuluewe/prey_and_pred/blob/main/test.py)
 - Test ✓
-   - ~~Sikre at `position` altid ligger indenfor Toroidal world.~~
-   - ~~Test at døde agents fjernes korrekt.~~
-   - ~~Test interaktion mellem agents (predator spiser prey).~~
+   - ~~Ensure that `position` always lies within the Toroidal world.~~
+   - ~~Test that dead agents are removed correctly.~~
+   - ~~Test interaction between agents (predators eating prey).~~
 
 
 ### Task 5 
 Solved in the file: [run.py](https://github.com/Zuluewe/prey_and_pred/blob/main/run.py)
-- Datasamling ✓
-    - ~~Gem data over tid~~
-    - ~~antal prey og predator efter hver step~~
-    - ~~Plot populationer over tid~~ 
+- Data collection ✓
+    - ~~Save data over time~~
+    - ~~Amount of prey og predator after every step~~
+    - ~~Plot population over time~~ 
 
-- Animation med matplotlib ✓
-  - ~~animer population over tid~~ 
-  - (optional) Animer 2D-verdenen. 
+- Animation with matplotlib ✓
+  - ~~Animate the population over time~~ 
+  - (optional) Animate a 2D-world. 
