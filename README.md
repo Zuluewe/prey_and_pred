@@ -1,6 +1,19 @@
 # prey_and_pred
+I en prey og predator simulation vil man gerne have er resultat af 2 grafer der afbilleder Lotka-Volterra-ligningerne. Dette er fordi at graferne afbilleder to systemer, der indvirker på hinanden i et indbyrdes konkurrenceforhold, som i vores kontekst er konkurrencen mellem rovdyr og byttedyr i en afgrænset biologisk kontekst.
+- Lotka-Volterra ligninger bliver defineret således:
 
-I min "Predator and Prey" simulation har jeg løst de krevede opgaver (som kan læses under), samt har jeg tilføjet følgende:
+    $\frac{dx}{dt} = kx-axy$
+
+    $\frac{dy}{dt} = bxy - hy$
+
+Ligning 1 svarer til antallet af byttedyr x til tiden t. Første led kx udtrukker den eksponentielle vækst af byttedyrene, som er sammensat af individernes fødsel og død. Det andet led -axy er udtryk for rovdyrenes drab på byttedyrene, der antages at være proportional med antal byttedyr gange antal rovdyr.
+
+Ligning 2 tilsvarende til antal rovdyr y til tiden t . Det første led bxy er udtryk for tilvæksten af rovdyr, idet rovdyrene spiser byttedyrene. Det sidste led -hy er udtryk for rovdyrenes øvrige vækst og død afhængig af andre forhold.
+
+![image](ideal_graph.png)
+
+## Tilføjelser
+I min "Predator and Prey" simulation har jeg løst de krævende opgaver (som kan læses under), og jeg tilføjet følgende:
 
 - Variable: hunger
 
