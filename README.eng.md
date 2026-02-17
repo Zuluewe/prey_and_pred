@@ -1,6 +1,6 @@
 # prey_and_pred
 [![ENG](https://img.shields.io/badge/language-ENG-red)](https://github.com/Zuluewe/prey_and_pred/blob/main/README.eng.md)
-[![DK](https://img.shields.io/badge/language-DK-blue)](https://github.com/Zuluewe/prey_and_pred/blob/main/README.dk.md)
+[![DK](https://img.shields.io/badge/language-DK-blue)](https://github.com/Zuluewe/prey_and_pred/edit/main/README.md)
 
 In a prey and predator simulation, you want to obtain the result of two graphs that depict the Lotka-Volterra equations. This is because the graphs depict two systems that influence each other in a competitive relationship, which in our context is the competition between predators and prey in a defined biological context.
 - Lotka-Volterra equations are defined as follows:
@@ -13,7 +13,7 @@ Equation 1 corresponds to the number of prey animals x at time t. The first term
 
 Equation 2 corresponds to the number of predators y at time t. The first term bxy represents the growth of predators as they consume prey animals. The last term -hy represents the other growth and death of predators depending on other conditions.
 
-![image](ideal_graph.png)
+![image](assets/ideal_graph.png)
 
 ## Additions
 In my “Predator and Prey” simulation, I have solved the required tasks (which can be read below), and I have added the following:
