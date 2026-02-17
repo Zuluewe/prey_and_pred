@@ -1,38 +1,39 @@
 # prey_and_pred
-[![DK](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.md)
-[![ENG](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.pt-br.md)
+[![ENG](https://img.shields.io/badge/language-ENG-red)](https://github.com/Zuluewe/prey_and_pred/blob/main/README.eng.md)
+[![DK](https://img.shields.io/badge/language-DK-blue)](https://github.com/Zuluewe/prey_and_pred/blob/main/README.dk.md)
 
-I en prey og predator simulation vil man gerne have er resultat af 2 grafer der afbilleder Lotka-Volterra-ligningerne. Dette er fordi at graferne afbilleder to systemer, der indvirker på hinanden i et indbyrdes konkurrenceforhold, som i vores kontekst er konkurrencen mellem rovdyr og byttedyr i en afgrænset biologisk kontekst.
-- Lotka-Volterra ligninger bliver defineret således:
+In a prey and predator simulation, you want to obtain the result of two graphs that depict the Lotka-Volterra equations. This is because the graphs depict two systems that influence each other in a competitive relationship, which in our context is the competition between predators and prey in a defined biological context.
+- Lotka-Volterra equations are defined as follows:
 
     $\frac{dx}{dt} = kx-axy$
 
     $\frac{dy}{dt} = bxy - hy$
 
-Ligning 1 svarer til antallet af byttedyr x til tiden t. Første led kx udtrukker den eksponentielle vækst af byttedyrene, som er sammensat af individernes fødsel og død. Det andet led -axy er udtryk for rovdyrenes drab på byttedyrene, der antages at være proportional med antal byttedyr gange antal rovdyr.
+Equation 1 corresponds to the number of prey animals x at time t. The first term kx expresses the exponential growth of prey animals, which is composed of the birth and death of individuals. The second term, -axy, represents the predators' killing of prey, which is assumed to be proportional to the number of prey times the number of predators.
 
-Ligning 2 tilsvarende til antal rovdyr y til tiden t . Det første led bxy er udtryk for tilvæksten af rovdyr, idet rovdyrene spiser byttedyrene. Det sidste led -hy er udtryk for rovdyrenes øvrige vækst og død afhængig af andre forhold.
+Equation 2 corresponds to the number of predators y at time t. The first term bxy represents the growth of predators as they consume prey animals. The last term -hy represents the other growth and death of predators depending on other conditions.
 
 ![image](ideal_graph.png)
 
-## Tilføjelser
-I min "Predator and Prey" simulation har jeg løst de krævende opgaver (som kan læses under), og jeg tilføjet følgende:
+## Additions
+In my “Predator and Prey” simulation, I have solved the required tasks (which can be read below), and I have added the following:
 
 - Variable: hunger
 
-Er løst i filerne: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py) og [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
+Solved in the file: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py) and [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
 
-Dette variable er for at sikre at ulve og får ikke spiser konstant så deres energi stiger eksponentielt.
+This variable is to insure that the wolved and sheep dont eat constantly so their energy grows exponentially.
+
  
-- Interact til prey
+- Interact for prey
 
-Er løst i filerne: [prey.py]([https://example.com](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py))
+Solved in the file:  [prey.py]([https://example.com](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py))
 
-Jeg defineret interact funktionen for prey så de kan få energi og reproduce.
+I define the interact funktionen for prey so they can increase their energi og reproduce.
 
-## Opgaver
-### Opgave 1 
-Er løst i filerne: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py) og [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
+## Taks
+### Task 1 
+Solved in the file: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py) and [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
 - Regler ✓
     - ~~Prey/Predator skal flytte sig i et random 4-nabolag(op/ned/venstre/højre)~~
     - ~~Prey/Predator mister energi hver tur self.energy -= 1~~
@@ -45,8 +46,8 @@ Er løst i filerne: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main
 - Test ✓
     - ~~print af antal prey/predator pr.step~~
 
-### Opgave 2
-Er løst i filerne: [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
+### task 2
+Solved in the file: [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
 - Regler: ✓
     - ~~Predator skal kunne spise én prey hvis der står en prey på samme celler.~~
     - ~~Når prey spises:~~
@@ -58,8 +59,8 @@ Er løst i filerne: [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/
         - ~~finde prey på samme celle (`model.agent_at()`)~~
         - ~~prey.die() hvis er blevet spist~~
 
-### Opgave 3
-Er løst i filerne: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py) og [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
+### Task 3
+Solved in the file: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main/prey.py) og [predator.py](https://github.com/Zuluewe/prey_and_pred/blob/main/predator.py)
 - Regler ✓
     - ~~Hvis prey/predator har høj energi, eller efter en reproduce_rate, laver den en ny baby.~~
     - ~~Baby spawn'er ved samme position (eller nabo, hvis i vil)~~
@@ -69,16 +70,16 @@ Er løst i filerne: [prey.py](https://github.com/Zuluewe/prey_and_pred/blob/main
     - ~~Prey.reproduce()~~
     - ~~Predator.reproduce()~~
 
-### Opgave 4
-Er løst i filerne: [test.py](https://github.com/Zuluewe/prey_and_pred/blob/main/test.py)
+### Task 4
+Solved in the file: [test.py](https://github.com/Zuluewe/prey_and_pred/blob/main/test.py)
 - Test ✓
    - ~~Sikre at `position` altid ligger indenfor Toroidal world.~~
    - ~~Test at døde agents fjernes korrekt.~~
    - ~~Test interaktion mellem agents (predator spiser prey).~~
 
 
-### Opgave 5 
-Er løst i filerne: [run.py](https://github.com/Zuluewe/prey_and_pred/blob/main/run.py)
+### Task 5 
+Solved in the file: [run.py](https://github.com/Zuluewe/prey_and_pred/blob/main/run.py)
 - Datasamling ✓
     - ~~Gem data over tid~~
     - ~~antal prey og predator efter hver step~~
