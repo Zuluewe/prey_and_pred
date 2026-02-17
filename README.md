@@ -1,6 +1,6 @@
 # prey_and_pred
 [![ENG](https://img.shields.io/badge/language-ENG-red)](https://github.com/Zuluewe/prey_and_pred/blob/main/README.eng.md)
-[![DK](https://img.shields.io/badge/language-DK-blue)](https://github.com/Zuluewe/prey_and_pred/edit/main/README.md)
+[![DK](https://img.shields.io/badge/language-DK-blue)](https://github.com/Zuluewe/prey_and_pred/blob/main/README.md)
 
 I en prey og predator simulation vil man gerne have er resultat af 2 grafer der afbilleder Lotka-Volterra-ligningerne. Dette er fordi at graferne afbilleder to systemer, der indvirker på hinanden i et indbyrdes konkurrenceforhold, som i vores kontekst er konkurrencen mellem rovdyr og byttedyr i en afgrænset biologisk kontekst.
 - Lotka-Volterra ligninger bliver defineret således:
