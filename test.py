@@ -3,10 +3,6 @@ from prey import Prey
 from predator import Predator
 from toroidalposition import ToroidalPosition
 
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
-
 def make_toroidal_classes(model):
     class ToroidalPrey(Prey):
         position = ToroidalPosition.from_model(model)
