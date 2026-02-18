@@ -21,10 +21,6 @@ class Model:
         self.agent.remove(agent)
 
     def agent_at(self, pos):
-        """
-        TODO:
-        return a list of agent who is occuppying the given position.
-        """
         return [agent for agent in self.agent if agent.position == pos]
 
     def next_uid(self):
@@ -39,13 +35,6 @@ class Model:
         """ 
 
         self.rng.shuffle(self.agent)
-        """
-        TODO:
-        - all agent Move
-        - all interact (eat)
-        - all reproduce (if possible)
-        - model cleanup the DEAD, remove dead agent from the agent list
-        """
         for agent in self.agent:
             if agent.alive:
                 agent.move()
