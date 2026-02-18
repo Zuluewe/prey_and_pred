@@ -87,5 +87,5 @@ Solved in the file: [run.py](https://github.com/Zuluewe/prey_and_pred/blob/main/
     - ~~Plot population over time~~ 
 
 - Animation with matplotlib ✓
-  - ~~Animate the population over time~~ 
-  - (optional) Animate a 2D-world. 
+  - ~~Animate the population over time~~
+  - ~~(optional) Animate a 2D-world.~~ 

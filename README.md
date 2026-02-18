@@ -88,4 +88,4 @@ Er løst i filerne: [run.py](https://github.com/Zuluewe/prey_and_pred/blob/main/
 
 - Animation med matplotlib ✓
   - ~~animer population over tid~~ 
-  - (optional) Animer 2D-verdenen. 
+  - ~~(optional) Animer 2D-verdenen.~~
